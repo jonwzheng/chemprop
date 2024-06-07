@@ -191,7 +191,7 @@ def make_prediction_for_model(
         smiles_cols=args.smiles_columns,
         rxn_cols=args.reaction_columns,
         target_cols=None,
-        ignore_cols=None,
+        ignore_cols=args.ignore_columns,
         splits_col=None,
         weight_col=None,
         bounded=bounded,

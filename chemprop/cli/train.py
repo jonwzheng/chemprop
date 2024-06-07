@@ -299,11 +299,6 @@ def add_train_args(parser: ArgumentParser) -> ArgumentParser:
         nargs="+",
         help="Name of the columns containing target values. By default, uses all columns except the SMILES column and the :code:`ignore_columns`.",
     )
-    train_data_args.add_argument(
-        "--ignore-columns",
-        nargs="+",
-        help="Name of the columns to ignore when :code:`target_columns` is not provided.",
-    )
     # TODO: Add in v2.1
     # train_data_args.add_argument(
     #     "--spectra-phase-mask-path",
